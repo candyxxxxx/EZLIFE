@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableLayout"><attr format="integer" name="duration"/><attr format="boolean" name="clickToToggle"/><attr format="enum" name="initialState"><enum name="expand" value="1"/><enum name="collapse" value="2"/></attr></declare-styleable>
+    <string name="app_name">library</string>
+</resources>

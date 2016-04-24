@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.demo.activity.currency_converter.HKDConverter"
+>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.hkdconverter.HKDConverter"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HKD($):"
+            android:id="@+id/hkd"
+            android:textStyle="bold"
+            android:textSize="45px"
+            android:textColor="@color/orange"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/hkdET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="83dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="RMB(元):"
+            android:textStyle="bold"
+            android:id="@+id/rmb"
+            android:textSize="45px"
+            android:textColor="@color/orange"
+            android:layout_above="@+id/usdET"
+            android:layout_alignLeft="@+id/hkd"
+            android:layout_alignStart="@+id/hkd" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="USD($):"
+            android:textColor="@color/orange"
+            android:id="@+id/usd"
+            android:textStyle="bold"
+            android:textSize="45px"
+            android:layout_above="@+id/gbpET"
+            android:layout_alignLeft="@+id/rmb"
+            android:layout_alignStart="@+id/rmb" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="GBP(£):"
+            android:textColor="@color/orange"
+            android:id="@+id/gbp"
+            android:textStyle="bold"
+            android:textSize="45px"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/usd"
+            android:layout_alignStart="@+id/usd" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR(€):"
+            android:textColor="@color/orange"
+            android:id="@+id/eur"
+            android:textStyle="bold"
+            android:textSize="45px"
+            android:layout_alignBottom="@+id/eurET"
+            android:layout_alignLeft="@+id/gbp"
+            android:layout_alignStart="@+id/gbp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JPY(￥):"
+            android:textColor="@color/orange"
+            android:id="@+id/hpy"
+            android:textStyle="bold"
+            android:textSize="45px"
+            android:layout_alignBottom="@+id/jpyET"
+            android:layout_alignLeft="@+id/eur"
+            android:layout_alignStart="@+id/eur" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hkdET"
+            android:singleLine="true"
+            android:hint="0"
+            android:textColorHint="#ff3000"
+            android:inputType="numberDecimal"
+            android:numeric="decimal"
+            android:layout_above="@+id/rmbET"
+            android:layout_alignRight="@+id/rmbET"
+            android:layout_alignEnd="@+id/rmbET"
+            android:layout_alignLeft="@+id/rmbET"
+            android:layout_alignStart="@+id/rmbET" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rmbET"
+            android:hint="0.00"
+            android:textColorHint="#000000"
+            android:textColor="#ff3000"
+            android:layout_alignBottom="@+id/rmb"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/rmb"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/rmb"
+            android:editable="false"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usdET"
+            android:hint="0.00"
+            android:textColorHint="#000000"
+            android:textColor="#ff3000"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_alignBottom="@+id/usd"
+            android:layout_alignRight="@+id/rmbET"
+            android:layout_marginTop="30dp"
+            android:layout_alignEnd="@+id/rmbET"
+            android:editable="false"
+            android:layout_toEndOf="@+id/rmb"
+            android:layout_toRightOf="@+id/rmb" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gbpET"
+            android:hint="0.00"
+            android:textColorHint="#000000"
+            android:textColor="#ff3000"
+            android:layout_alignBottom="@+id/gbp"
+            android:layout_alignRight="@+id/usdET"
+            android:layout_alignEnd="@+id/usdET"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginTop="30dp"
+            android:editable="false"
+            android:layout_alignLeft="@+id/usdET"
+            android:layout_alignStart="@+id/usdET" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eurET"
+            android:hint="0.00"
+            android:textColorHint="#000000"
+            android:textColor="#ff3000"
+            android:singleLine="true"
+            android:inputType="number"
+            android:editable="false"
+            android:layout_below="@+id/gbp"
+            android:layout_marginTop="30dp"
+            android:layout_alignRight="@+id/gbpET"
+            android:layout_alignEnd="@+id/gbpET"
+            android:layout_alignLeft="@+id/gbpET"
+            android:layout_alignStart="@+id/gbpET" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jpyET"
+            android:hint="0.00"
+            android:textColorHint="#000000"
+            android:textColor="#ff3000"
+            android:singleLine="true"
+            android:inputType="number"
+            android:editable="false"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/eurET"
+            android:layout_alignLeft="@+id/eurET"
+            android:layout_alignStart="@+id/eurET"
+            android:layout_alignRight="@+id/eurET"
+            android:layout_alignEnd="@+id/eurET" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignTop="@+id/hkdET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/rmbET"
+            android:layout_toLeftOf="@+id/rmb"
+            android:layout_toStartOf="@+id/rmb"
+            android:src="@drawable/hk" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/rmbET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/usdET"
+            android:layout_toLeftOf="@+id/rmb"
+            android:layout_toStartOf="@+id/rmb"
+            android:src="@drawable/cn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/gbpET"
+            android:layout_toLeftOf="@+id/usd"
+            android:layout_toStartOf="@+id/usd"
+            android:layout_alignTop="@+id/usdET"
+            android:src="@drawable/us" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_alignTop="@+id/gbpET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/eurET"
+            android:layout_toLeftOf="@+id/gbp"
+            android:layout_toStartOf="@+id/gbp"
+            android:src="@drawable/eg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:layout_alignTop="@+id/eurET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/eur"
+            android:layout_toLeftOf="@+id/eur"
+            android:layout_toStartOf="@+id/eur"
+            android:src="@drawable/euro" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:layout_alignTop="@+id/jpyET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/hpy"
+            android:layout_toLeftOf="@+id/hpy"
+            android:layout_toStartOf="@+id/hpy"
+            android:src="@drawable/jp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.hkdconverter.HKDConverter"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="220dp"
+            android:layout_height="fill_parent">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.example.hkdconverter.HKDConverter"
+            android:layout_toRightOf="@+id/LinearLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultImageView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+
+
+
