@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/blue"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_finance"
+                android:layout_gravity="center_horizontal"/>
+        <TextView
+
+            android:id="@+id/subFunction_Finance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="Finance"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_tool"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/subFunction_LifeAround"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="LifeAround"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_manage"
+                android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/subFunction_Management"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Learning"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/slide_line" />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+    <style name="SpecialTitle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="SpecialText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+</resources>

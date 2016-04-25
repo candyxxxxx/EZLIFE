@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="choose the tools you like" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="Currency"
+            android:title="Currency" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="Weather"
+            android:title="Weather" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="Translation"
+            android:title="Translation" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ISBN"
+            android:title="ISBN" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

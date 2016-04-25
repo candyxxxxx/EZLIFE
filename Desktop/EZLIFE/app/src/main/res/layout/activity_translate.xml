@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:editable="true"
+            android:background="#62D4D6"/>
+
+
+        <ImageView
+            android:id="@+id/switcher"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|right"
+            android:layout_margin="10dp"
+            android:src="@mipmap/icon_search" />
+
+    </LinearLayout>
+
+    <library.src.main.java.cn.refactor.library.ExpandableLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#E85B2E"
+        android:orientation="vertical"
+        app:duration="350"
+        app:initialState="collapse"
+        app:clickToToggle="true">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:gravity="bottom|left|right|top">
+
+            <ImageView
+                android:id="@+id/speak"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_louder"
+                android:paddingBottom="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="30dp"
+            android:background="#00000000">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff9ff"
+                android:textSize="24sp"
+                android:editable="true" />
+
+        </LinearLayout>
+    </library.src.main.java.cn.refactor.library.ExpandableLayout>
+
+
+
+
+</LinearLayout>

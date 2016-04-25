@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_background">#DBDDD7</color>
+    <color name="yellow">#F79625</color>
+    <color name="dark_yellow">#FCD35B</color>
+    <color name="red">#FF0000</color>
+    <color name="water_red">#F64744</color>
+    <color name="orange">#E85B2E</color>
+    <color name="blue">#00A2A4</color>
+    <color name="pink">#C72062</color>
+    <color name="dark_blue">#017B97</color>
+    <color name="great_blue">#0479C0</color>
+    <color name="grey">#243037</color>
+    <color name="green">#85C486</color>
+    <color name="purple">#A50E5E</color>
+    <color name="none">#00ffffff</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="black"> #000000</color>
+    <color name="darkgrey"> #999999</color>
+    <color name="gary">#898989</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="watermark_hint">#ccffffff</color>
+    <color name="act_background">#efefef</color>
+
+</resources>
