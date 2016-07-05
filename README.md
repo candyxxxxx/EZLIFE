@@ -1,6 +1,6 @@
 # EZLIFE
 
-## A life querying app 
+## A life query and voice memo app 
 
 we aim to produce a more effective way to provide users with more life tips and helps, which can give them a better arrangement and enhancement of their life quality. Compared with some apps which only have unilateral functions, we try to give more specific helps with an accurate category and more simply and clean operation. It would be an excellent experience to enjoy:
 
